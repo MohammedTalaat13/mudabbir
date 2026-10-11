@@ -1,0 +1,243 @@
+/* Large devices (desktops, less than 1200px)*/
+
+@media (max-width: 1280px) { 
+
+
+/**************** Header , Aside Section Start ********************/
+aside{
+    width: 63.2px;
+    padding: 12px;
+}
+
+.main{
+    margin-right: 63.2px;
+     
+}
+
+aside .container{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aside-headline .logo {
+    width: 40px;
+    height: 40px;
+}
+
+aside nav li {
+    padding: 8px 12px;
+}
+
+aside .btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+aside .aside-headline .heading,
+aside nav span span ,
+aside .aside-body .btn span:last-of-type ,
+aside .actions-head{
+    display: none;
+}
+
+aside .quick-actions{
+    margin-top: 40px;
+}
+
+aside .aside-body .btn{
+    padding: 0;
+    margin-bottom: 28px;
+}
+
+aside nav ul,
+aside nav ul li {
+    width: fit-content;
+}
+
+
+
+
+/**************** Header , Aside Section End ********************/
+
+/* overveiw cards section start */
+
+.overview-cards .card .card-value{
+    font-size: 24px;
+}
+/* overveiw cards section end */
+
+
+
+.main .dashboard-widgets{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "notifications-card  income-vs-expenses-card"
+        " table table "
+        " bills-card account-summary-card "
+        " budget-overview-card   payment-methods-card"
+        " budget-overview-card   payment-methods-card"
+    ;
+    gap: 16px;
+}
+
+
+/************** Budget-Overview-Card Start **************/
+
+/************** Budget-Overview-Card End ****************/
+}
+
+
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+
+/**************** Header , Aside Section Start ********************/
+
+
+.main{
+    margin-right: 0;
+}
+
+.container{
+   padding: 16px 16px 32px;
+}
+
+
+
+.main .container{
+    padding: 16px 16px 32px;
+}
+
+aside  {
+        display: none;
+}
+
+header {
+    padding: 16px;
+}
+
+.header-headline .logo{
+    font-size: 16px;
+    width: 48px;
+    height: 48px;
+}
+
+.header-headline .head{
+    font-size: 24px;
+}
+
+
+header .left .user-status{
+    font-size: 12px;
+    padding: 4px 8px;
+   
+}
+
+
+.right .user-info{
+    padding: 8px 12px;
+}
+
+.right .user-info .image-holder{
+    width: 32px;
+    height: 32px;
+}
+
+.right .user-info .account-status{
+    display: none;
+}
+
+.overview-cards{
+    grid-template-columns: 100%;
+}
+
+.overview-cards .card .card-value{
+    font-size: 30px;
+}
+
+.main .dashboard-widgets{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "notifications-card"
+        "table"
+        "bills-card"
+        " budget-overview-card"
+        "income-vs-expenses-card"
+        "account-summary-card " 
+        "payment-methods-card"
+    ;
+    gap: 16px;
+}
+
+table *{
+    font-size: 12px;
+}
+
+
+/************** Budget-Overview-Card Start **************/
+
+/************** Budget-Overview-Card End ****************/
+
+}
+
+
+
+
+/**************** Header , Aside Section End **********************/
+
+/* X-Small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 639.98px) { 
+
+
+
+/**************** Header , Aside Section Start ********************/
+    header{
+        flex-wrap: wrap;
+    }
+    header .left,
+    header .right{
+        width: 100%;
+    }
+    
+    header .right{
+        justify-content: space-between;
+    }
+
+    header .left .user-status{
+        display: none;
+    }
+
+    header .right .meta{
+        display: none;
+    }
+
+    header  .user-status-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+/**************** Header , Aside Section End **********************/
+
+
+
+/************** Budget-Overview-Card Start **************/
+
+
+
+/************** Budget-Overview-Card End ****************/
+
+
+}
+

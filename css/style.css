@@ -1,0 +1,1375 @@
+/**************** Global Styles Start *********************/
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../Font/IBMPlexSansArabic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.3) transparent ;
+}
+
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 600;
+    color: #101828;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    padding: 32px 32px;
+    
+}
+
+span{
+    display: inline-block;
+}
+
+a{
+    display: inline-block;
+    
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+.b-sh{
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    background-color: #fff;
+    border: 0.8px solid #e5e7eb;
+    padding: 24px;
+    border-radius: 1rem;
+}
+
+.txt-lg{
+    font-size: 16px;
+}
+
+.txt-md{
+    font-size: 14px;
+}
+
+.txt-sm{
+    font-size: 12px;
+}
+
+.nd-color{
+    color: #6a7282;
+}
+
+.rd-color{
+    color: #364153;
+}
+
+/**************** Global Styles End   *********************/
+
+/**************** Aside Styles Start *********************/
+
+aside{
+    border-left: 1.6px solid #e5e7eb;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 256px;
+    overflow-y: auto;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+aside .container{
+    padding: 24px;
+}
+
+.aside-headline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    column-gap: 16px;
+    margin-bottom: 32px;
+}
+
+.logo{
+    background-color: #3C3CDF;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.heading .head{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.heading span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5565;
+}
+
+nav{
+    margin-bottom: 32px;
+    color: #4a5565;
+} 
+
+nav li ,
+.quick-actions .btn{
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: .75rem;
+    margin-bottom: 0.75rem;
+    align-items: center;
+    cursor: pointer;
+    border-radius: .75rem;
+}
+
+nav li{
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+nav li:not(:first-of-type):hover{
+    background-color: #f9fafb;
+}
+
+nav li:first-of-type{
+    color: #155DFC;
+    background-color: #EFF6FF;
+    border: 1.6px solid #dbeafe;
+}
+
+nav li:last-of-type{
+    margin-bottom: 0;
+}
+
+.quick-actions .btn {
+        transition: all .2s;
+}
+
+.quick-actions .btn:hover{
+    transform: translateX(2px);
+    background-color: #f9fafb;
+
+}
+
+.quick-actions .actions-head{
+    margin-bottom: 1rem;
+    padding-inline: 8px;
+    color: #364153;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.quick-actions .btn span:last-of-type{
+    font-size: 14px;
+    color: #374151;
+    font-size: .875rem;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+
+.quick-actions .btn:hover span:last-of-type{
+    color: black;
+}
+
+.quick-actions .btn .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quick-actions .btn:nth-of-type(1) .icon{
+    background-color: #DFECFF;
+    color: #155DFC;
+}
+
+.quick-actions .btn:nth-of-type(2) .icon{
+    background-color: #D9F7E5;
+    color: #00A63E;
+}
+
+.quick-actions .btn:nth-of-type(3) .icon{
+    background-color:#F3E4FF;
+    color: #9810FA;
+}
+
+.quick-actions .btn:nth-of-type(4) .icon{
+    background-color: #FFE9D9;
+    color: #F54900;
+}
+
+
+/**************** Aside Styles End *********************/
+
+/**************** Header Section Start ********************/
+
+.main{
+    margin-right: 256px;
+    background-color: #F9FAFB;
+}
+
+header{
+    background-image: linear-gradient(to left,oklab(0.97 -0.00371685 -0.0134976 / 0.5) 0%, rgb(255, 255, 255) 50%, oklab(0.962 0.000726771 -0.0179853 / 0.3) 100%);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px;
+    border-radius: 1rem;
+    border: 1.6px solid #e5e7eb;
+    margin-bottom: 30px;
+}
+
+
+
+header .left,
+header .right{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    height: auto;
+}
+
+
+header .left .header-headline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    column-gap: 16px;
+    margin-bottom: 32px;
+
+}
+
+
+header .left .header-headline{
+    margin-bottom: 0;
+}
+
+header .left .user-status{
+    padding: 6px 12px;
+    color: #008236;
+    background-color: #F0FDF4;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: oklch(0.962 0.044 156.743) solid 1.6px;
+    border-radius: 8px;
+}
+
+header .user-status-mobile{
+    padding: 6px 12px;
+    color: #008236;
+    background-color: #F0FDF4;
+    font-weight: 600;
+    display: none;
+    gap: 8px;
+    border: oklch(0.962 0.044 156.743) solid 1.6px;
+    border-radius: 8px;
+}
+
+header .left .user-status .status-dot,
+header .user-status-mobile .status-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #39D677;
+}
+
+.right .btns-area{
+    display: flex;
+    gap: 4px;
+}
+
+.right .user-info {
+    display: flex;
+    gap: 12px;
+    padding: 8px 16px;
+    border: 1.6px solid #E5E7EB;
+    border-radius: 12px;
+    align-items: center;
+    transition: all .2s;
+    box-shadow: 0 1px 3px 0 #0000001a,
+     0 1px 2px -1px  #0000001a;
+
+}
+
+.right .user-info:hover {
+    box-shadow:  0 4px 6px -1px var(--tw-shadow-color,#0000001a),
+    0 2px 4px -2px var(--tw-shadow-color,#0000001a);
+}
+
+.right .user-info .image-holder{
+    width: 40px;
+   
+}
+
+.right .user-info .image-holder img{
+ border-radius: 12px;
+}
+
+.right .user-info .meta .user-name{
+    font-weight: 600;
+}
+
+.right .user-info .account-status{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6a7282
+}
+
+.right  .notification ,
+.right  .search{
+    width: 37px;
+    height: 37px;
+    border: 1.6px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all .3s;
+}
+
+.right  .notification{
+    position: relative;
+}
+
+.right  .notification:hover,
+.right  .search:hover{
+    background-color: #F3F4F6;
+}
+
+.right  .notification .notifications-count{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #fb2c36;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/**************** Header Section End ********************/
+
+
+/**************** Overveiw Section Start ********************/
+
+.overview-cards{
+    display: grid;
+    grid-template-columns: repeat(3 , calc(33.33% - calc(48px / 3)) );
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+
+
+.overview-cards .card{
+    background-color: #fff;
+    border: 0.8px solid #e5e7eb;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.overview-cards .card .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6a7282;
+    margin-bottom: 6px;
+}
+
+.overview-cards .card .card-value{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.overview-cards .card .card-persintig{
+    font-size: 14px;
+    font-weight: 500;
+    color: #00a63e;
+}
+
+.overview-cards .card:last-of-type .card-persintig{
+    color: #e7000b;
+}
+
+.overview-cards .card:last-of-type .card-persintig i{
+    margin-inline-end: 4px;
+}
+/**************** Overveiw Section End ********************/
+
+/* ************** dashboard-widgets Start *****************/
+
+.main .dashboard-widgets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "notifications-card  table table"
+        "bills-card  table table"
+        "budget-overview-card  income-vs-expenses-card payment-methods-card"
+        "budget-overview-card account-summary-card payment-methods-card"
+    ;
+    gap: 16px;
+}
+
+.dashboard-widgets .notifications-card{
+    grid-area: notifications-card;
+}
+
+.dashboard-widgets .bills-card{
+    grid-area: bills-card;
+}
+
+.dashboard-widgets .transactions-table{
+    grid-area: table;
+}
+
+
+.dashboard-widgets .title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard-widgets .headline{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.dashboard-widgets .headline .display-all{
+    color: #6a7282;
+    cursor: pointer; 
+    font-size: 12px;
+}
+
+.dashboard-widgets .notifications-card .activities-list > div{
+    padding: 12px;
+    border-radius: .75rem;
+}
+
+.dashboard-widgets .notifications-card .activities-list > div {
+    display: flex;
+    flex-flow: nowrap;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.dashboard-widgets .notifications-card .activities-list .meta{
+    flex-grow: 1;
+}
+
+.dashboard-widgets .notifications-card .activities-list .meta p:not(:first-child){
+    font-size: 12px;
+    color: #4a5565;
+}
+
+.dashboard-widgets .notifications-card .activities-list .meta p:nth-child(2){
+    margin-bottom: 8px;
+}
+
+
+
+.dashboard-widgets .notifications-card .activities-list > div .meta .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    width: 100%;
+
+}
+
+.dashboard-widgets .notifications-card .activities-list > div .meta .subtitle :first-child{
+    font-size: 14px;
+}
+
+.dashboard-widgets .notifications-card .activities-list > div .icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.dashboard-widgets .notifications-card .activities-list .creat-account .icon{
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.dashboard-widgets .notifications-card .activities-list .creat-account p span:last-child{
+    color: #155DFC;
+    font-size: 12px;
+    font-weight: 500px;
+}
+
+.dashboard-widgets .notifications-card .activities-list .add-new-card .icon{
+    background-color:#DBFCE7;
+    color: #00A63E;
+}
+
+.dashboard-widgets .notifications-card .activities-list .add-new-card p span:last-child{
+    color: #00A63E;
+    font-size: 12px;
+    font-weight: 500px;
+}
+
+.dashboard-widgets .notifications-card .creat-account{
+    border-left: 3.2px solid #3283FF;
+    margin-bottom: 12px;
+    background-color: #EFF6FF;
+}
+
+.dashboard-widgets .notifications-card .add-new-card{
+    border-left: 3.2px solid #08CB57;
+    background-color: #F0FDF4;
+}
+
+.dashboard-widgets  .notifications-card .display-all {
+    margin-top: 16px;
+    border-top: 1.6px solid #f3f4f6;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    color: #1447e6;
+    cursor: pointer;
+}
+
+.dashboard-widgets .bills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.dashboard-widgets .bills .bill{
+    display: flex;
+    background-color: #F9FAFB;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 1.6px solid #f3f4f6;
+    border-radius: 12px;
+}
+
+
+.dashboard-widgets .bills-card .balance{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.dashboard-widgets .bills-card .balance .number{
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.dashboard-widgets .bills-card .balance  p:last-of-type{
+    font-size: 14px;
+    color: #6a7282;
+}
+
+.bills-card .bill .object .icon{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    background-color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+.bills-card .bill:nth-child(1) .object .icon{
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.bills-card .bill:nth-child(2) .object .icon{
+    background-color: #FEF9C2;
+    color: #D08700;
+}
+
+
+.bills-card .bill:nth-child(3) .object .icon{
+    background-color: #DBFCE7;
+    color: #00A63E;
+}
+
+.bills-card .bill:nth-child(4) .object .icon{
+    background-color: #FFE2E2;
+    color: #E7000B;
+}
+
+
+.bills-card .bill:nth-child(1) .time{
+    color: #E7000B;
+}
+
+.bills-card .bill:nth-child(2) .time{
+    color: #D08700;
+}
+
+.bills-card .bill:nth-child(3) .time{
+    color: #00A63E;
+}
+
+/* ************** dashboard-widgets End *****************/
+table{
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.table{
+    overflow-x: auto;
+   
+}
+
+table tr{
+
+    border-bottom: .8px solid #f3f4f6;
+}
+
+table th{
+    padding: 12px 8px;
+    text-align: start;
+}
+
+table td:first-child{
+    display: flex;
+    gap:12px;
+
+}
+
+table td{
+    padding: 16px 8px;
+}
+
+table .image-holder{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+table .image-holder img{
+    border-radius: 50%;
+}
+
+table .pay-category,
+table .state{
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 9999px;
+}
+
+table tr:nth-child(2) .image-holder{
+    color: #F54900;
+    background-color: #FFEDD4;
+}
+
+table tr:nth-child(3) .image-holder{
+    color: #155DFC;
+    background-color: #DBEAFE;
+}
+
+table tr:nth-child(6) .image-holder{
+    color: #E7000B;
+    background-color: #FFE2E2;
+}
+
+table tr:nth-child(7) .image-holder{
+    color: #4f39f6;
+    background-color: #E0E7FF;
+}
+
+table tr:nth-child(8) .image-holder{
+    color: #0092B8;
+    background-color: #CEFAFE;
+}
+
+table tr:nth-child(9) .image-holder{
+    color: #009966;
+    background-color: #D0FAE5;
+}
+
+table tr:nth-child(1) .pay-category,
+table tr:nth-child(5) .pay-category,
+table tr:nth-child(9) .pay-category,
+table .state {
+    background-color: #D0FAE5;
+    color: #006045;
+}
+
+table tr:nth-child(2) .pay-category{
+    color: #F54900;
+    background-color: #FFEDD4;
+}
+
+table tr:nth-child(3) .pay-category{
+    background-color: #DBEAFE;
+    color: #193CB8;
+}
+
+table tr:nth-child(4) .pay-category{
+    background-color: #F3E8FF;
+    color: #6E11B0;
+}
+
+table tr:nth-child(6) .pay-category{
+    background-color: #FFE2E2;
+    color: #9F0712;
+}
+
+table tr:nth-child(7) .pay-category{
+    background-color: #E0E7FF;
+    color: #6159C1;
+}
+
+table tr:nth-child(8) .pay-category{
+    background-color: #CEFAFE;
+    color: #3d6269;
+}
+
+
+table tr:nth-child(6) .state{
+    color: #F54900;
+    background-color: #FFEDD4;
+}
+
+table tr:nth-child(1) .amount,
+table tr:nth-child(5) .amount{
+    color: #00A63E;
+} 
+
+
+/************** Budget-Overview-Card Start **************/
+.budget-overview-card{
+    grid-area: budget-overview-card;
+}
+
+.budget-overview-card .budget-summary{
+    background-color: #EEF4FF;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.budget-overview-card .budget-summary .meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.budget-overview-card .budget-summary .meta .title{
+    font-size: 14px;
+    color: #155dfb;
+}
+
+.budget-overview-card .budget-summary .meta .amount{
+    font-size: 24px;
+    font-weight: 700;
+    color: #1C398E;
+}
+
+.budget-overview-card .budget-summary .bar-area .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.budget-overview-card .budget-summary .bar-area .bar{
+    width: 100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 5.36871e+07px;
+}
+
+.budget-overview-card .budget-summary .bar-area .bar .colored{
+    height: 100%;
+    width: 82.5%;
+    background-color: #155dfb;
+    border-radius: 5.36871e+07px;
+}
+
+
+.budget-overview-card .budget-summary .amount-block:nth-of-type(2) :last-child{
+    font-size: 18px;
+    color: #00a63e;
+}
+
+.budget-overview-card .budget-category{
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: #F5F6F8;
+    border-radius: .75rem;
+    transition: all 0.2s;
+    border: 1px solid #e5e7ebcc;
+}
+
+.budget-overview-card .budget-category:hover {
+    background: #f3f4f6cc;
+    border-color: #d1d5dbe6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f;
+}
+
+.budget-overview-card .budget-category .meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.budget-overview-card .budget-category .meta .right-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.budget-overview-card .budget-category .meta .right-part .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+.budget-overview-card .budget-category .bar{
+    width: 100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 5.36871e+07px;
+}
+
+.budget-overview-card .budget-category .bar .colored-part{
+    height: 100%;
+    
+    background-color: #155dfb;
+    border-radius: 5.36871e+07px;
+}
+
+.budget-overview-card .budget-category:nth-of-type(1) .bar .colored-part{
+    width: 50%;
+    background-color: #FF6900;
+}
+
+.budget-overview-card .budget-category:nth-of-type(2) .bar .colored-part{
+    width: 100%;
+    background-color: #FB2C36;
+}
+
+.budget-overview-card .budget-category:nth-of-type(3) .bar .colored-part{
+    width: 80%;
+    background-color: #F6339A;
+}
+
+.budget-overview-card .budget-category:nth-of-type(4) .bar .colored-part{
+    width: 86%;
+    background-color: #00C950;
+}
+
+
+.budget-overview-card .budget-category:nth-of-type(1) .icon{
+    background-color: #FFEDD4;
+    color: #FF6900;
+}
+
+.budget-overview-card .budget-category:nth-of-type(2) .icon{
+    background-color: #FEE2E2;
+    color: #FB2C36;
+}
+
+.budget-overview-card .budget-category:nth-of-type(3) .icon{
+    background-color: #FCE7F3;
+    color: #F6339A;
+}
+
+.budget-overview-card .budget-category:nth-of-type(4) .icon{
+    background-color: #DCFCE7;
+    color: #00C950;
+}
+
+
+.budget-overview-card .budget-category .left-part p:last-child{
+    padding: 2px 8px;
+    border-radius: 99px;
+    background-color: #006045 ;
+}
+
+.budget-overview-card .budget-category:nth-of-type(1) .left-part p:last-child{
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.budget-overview-card .budget-category:nth-of-type(2) .left-part p:last-child{
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.budget-overview-card .budget-category:nth-of-type(3) .left-part p:last-child{
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.budget-overview-card .budget-category:nth-of-type(4) .left-part p:last-child{
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+/************** Budget-Overview-Card End ****************/
+
+/************** Income-vs-Expenses-Card Start **********/
+
+.income-vs-expenses-card{
+    grid-area: income-vs-expenses-card;
+}
+
+.income-vs-expenses-card .chart-legend{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.income-vs-expenses-card .chart-legend .icon{
+    width: 12px;
+    height: 12px;
+    marker-end: 8px;
+    border-radius: 2px;
+}
+
+.income-vs-expenses-card .chart-legend :first-child .icon{
+    background-color: #10B981;
+}
+
+.income-vs-expenses-card .chart-legend :last-child .icon{
+    background-color: #EF4444;
+}
+
+.income-vs-expenses-card .chart-groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    padding: 16px 0px;
+    align-items: end;
+}
+
+.income-vs-expenses-card .chart-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bar{
+    display: flex;
+    justify-content: center;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap:4px;
+    margin-bottom: 8px;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars>div{
+    width: 16px;
+    border-radius:  3px 3px 0 0;
+    transition: all .2s;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars .income{
+    background-color: #10B981;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars .income:hover{
+    background-color: #40C79A;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars .expenses{
+    background-color: #EF4444;
+}
+
+.income-vs-expenses-card .chart-groups .chart-bars .expenses:hover{
+    background-color: #F26969;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(1) .chart-bars .income{
+    height: 95px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(1) .chart-bars .expenses{
+    height: 42px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(2) .chart-bars .income{
+    height: 98px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(2) .chart-bars .expenses{
+    height: 45px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(3) .chart-bars .income{
+    height: 92px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(3) .chart-bars .expenses{
+    height: 38px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(4) .chart-bars .income{
+    height: 96px;
+}
+
+.income-vs-expenses-card .chart-group:nth-child(4) .chart-bars .expenses{
+    height: 45px;
+}
+/************** Income-vs-Expenses-Card End ************/
+
+
+/************** account-summary-card Start ************/ 
+
+.account-summary-card{
+    grid-area: account-summary-card;
+}
+
+.account-summary-card .cards .card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9FAFB;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.account-summary-card .cards .card .title{
+    font-size: 16px;
+}
+
+.account-summary-card .cards .card:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.account-summary-card .cards .card .right-part{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account-summary-card .cards .card:last-child .left-part{
+    color: #e7000b;
+}
+
+.account-summary-card .cards .card .right-part .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.account-summary-card .cards .card:nth-child(1) .right-part .icon{
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.account-summary-card .cards .card:nth-child(2) .right-part .icon{
+    background-color: #DBFCE7;
+    color: #00A63E;
+}
+
+.account-summary-card .cards .card:nth-child(3) .right-part .icon{
+    background-color: #F3E8FF;
+    color: #9810FA;
+}
+
+/************** account-summary-card End   ************/ 
+
+/************** payment-methods-card Start   ************/ 
+
+.payment-methods-card{
+    grid-area: payment-methods-card;
+}
+
+.payment-card{
+    perspective: 1000px;
+    position: relative;
+}
+
+.payment-card:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.payment-card .payment-card-front .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.payment-card .payment-card-front .primry{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    backdrop-filter:blur(4px);
+    padding: 6px 10px;
+    border-radius: 9999px;
+}
+
+.payment-card .payment-card-front .card-id{
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-family: system-ui, sans-serif;
+}
+
+.payment-card .payment-card-front .crad-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-card-inner{
+    position: relative;
+    width: 100%;
+    min-height: 245px;
+    transform-style: preserve-3d;
+    transition: all .3s;
+}
+
+.payment-card:hover .payment-card-inner{
+    transform: rotateY(180deg);
+}
+
+.payment-card-front,
+.payment-card-back{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 245px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 18px;
+}
+
+.payment-card-front{
+    transform: rotateY(0deg);
+    padding: 28px;
+    color: #fff;
+}
+
+.payment-card:nth-of-type(1) .payment-card-front{
+    background-color: #372aac;
+}
+
+.payment-card:nth-of-type(2) .payment-card-front{
+    background-color: #c70036;
+}
+
+.payment-card:nth-of-type(3) .payment-card-front{
+    background-color: #193cb8;
+}
+
+.payment-card:nth-of-type(3) .payment-card-front .exper-date{
+    color: #06df72;
+}
+
+.payment-card-front .title .squre{
+    width: 48px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: #ffffff33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-card-front .title .squre div{
+    width: 24px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #ffffff66;
+}
+
+.payment-card-front .image-holder{
+    width: 38px;
+}
+
+
+.payment-card-back{
+    transform: rotateY(180deg);
+    background-image: linear-gradient(120deg, rgb(5, 16, 38), rgb(11, 18, 32) 45%, rgb(15, 23, 36));
+    padding: 16px;
+}
+
+.payment-card-back .header{
+    margin-top: 6px;
+    margin-bottom: 8px;
+    height: 28.05px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(17, 17, 17) 40%, rgb(43, 43, 43)) ;
+}
+
+.payment-card-back .policy{
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.payment-card-back .password{
+    padding: 6px 8px;
+    background-image: linear-gradient(90deg,#f8fafc,#eef2f6);
+    border-radius: 4px;
+    font-weight: 700;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.payment-card-back .password .bar{
+    width: 75%;
+    height: 12.2px;
+    background-image:  linear-gradient(90deg, #DFE2E3, #E8EAEC);;
+}
+
+.payment-card-back .footer{
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+
+.payment-card-back .footer .num{
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    color: #111827;
+    width: fit-content;
+}
+
+
+
+/************** payment-methods-card End   ************/ 
